@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./krysteen-weather-app.css">
+    <script src="./krysteen-weather-app.js"></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar">
+            <button>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="2em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                        clip-rule="evenodd"></path>
+                    <path fill-rule="evenodd"
+                        d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="container-weather">
+        <header>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputcity">city</label>
+                    <input type="city" class="form-control" id="exampleInputcity" placeholder="enter your city">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </header>
+        <main>
+            <div class="search">
+                <div class="weathericons-regular-webfont">
+                    <div class="weather-temp-today"></div>
+                    <div class="weather-unit"> ˚ C </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="weather-detail_text">
+                    precipitation: 85%
+                </div>
+                <div class="weather-detail_text">
+                    wind:4km/hr
+                </div>
+            </div>
+            <section>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> London, UK</h5>
+                                <p class="card-text"> 63˚ C</p>
+                                <div class="weather"> Sunny 🌞</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> New york, USA </h5>
+                                <p class="card-text"> 86˚ c</p>
+                                <div class="weather"> partly cloudy ☁️ </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> Shangai, China </h5>
+                                <p class="card-text"> 90˚ C</p>
+                                <div class="weather"> Sunny 🌞</div>
+                            </div>
+                        </div>
+                    </div>
+            </Section>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="day-forecast"> mon</div>
+                    <div class="forecast-icon">
+                        <canvas width="38" height="70"></canvas>
+                        <div class="forecast-temperature"></div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="day-forecast"> Tue</div>
+                    <div class="forecast-icon">
+                        <canvas width="38" height="70"></canvas>
+                        <div class="forecast-temperature"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="day-forecast"> Wed</div>
+                    <div class="forecast-icon">
+                        <canvas width="38" height="70"></canvas>
+                        <div class="forecast-temperature"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="day-forecast"> Thur</div>
+                    <div class="forecast-icon">
+                        <canvas width="38" height="70"></canvas>
+                        <div class="forecast-temperature"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="day-forecast"> Fri</div>
+                    <div class="forecast-icon">
+                        <canvas width="38" height="70"></canvas>
+                        <div class="forecast-temperature"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="day-forecast"> Sat</div>
+                    <div class="forecast-icon">
+                        <canvas width="38" height="70"></canvas>
+                        <div class="forecast-temperature"></div>
+                    </div>
+                </div>
+        </main>
+        <br />
+        <br />
+        <small>
+            Coded by Christine Gitumbi
+        </small>
+    </div>
+
+</body>
+
+</html>

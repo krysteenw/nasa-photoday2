@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: rgb(136, 25, 158);
+  background-image: url(https://unsplash.com/photos/cssvEZacHvQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 32px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+}
